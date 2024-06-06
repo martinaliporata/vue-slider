@@ -13,6 +13,7 @@
     <div id="app">
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
+                <button @click="buttonToChange(index)">Premimi</button>
                 <article class="item">
                     <img :src="slides[activeIndex].image" alt="slides[activeIndex].title]" />
                     <div class="text">
