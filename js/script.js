@@ -46,8 +46,12 @@ createApp({
             }
         },
 
-        buttonToChange: function(index){
-            this.activeIndex=index;
+        buttonToChange: function(){
+            if (this.activeIndex === this.slides.length -1) {
+                this.activeIndex = 0
+            } else {
+                this.activeIndex+=1;
+            }
         }
     }
 }).mount('#app')
